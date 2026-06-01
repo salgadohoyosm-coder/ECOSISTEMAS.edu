@@ -1,74 +1,313 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ecosistemas Pro | Formación Técnica</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOSISTEMAS | Escuela de Comercio, Computación y Sistemas</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </head>
+
 <body>
 
-  <header class="header" id="main-nav">
-    <nav class="header__nav">
-      <div class="header__logo">ECOSISTEMAS</div>
-
-      <ul class="header__menu" id="nav-links">
-        <li><a class="header__link" href="#">Inicio</a></li>
-        <li><a class="header__link" href="#programs">Programas</a></li>
-        <li><a class="header__link" href="#about">Nosotros</a></li>
-        <li><a class="header__link" href="#contact">Contacto</a></li>
-      </ul>
-
-      <button class="header__toggle" id="hamburger" aria-label="Abrir menú">☰</button>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <div class="container hero__content">
-      <h1 class="hero__title">Formación <span>Profesional</span></h1>
-      <p class="hero__text">
-        Capacítate con programas modernos, prácticos y orientados al mercado laboral.
-      </p>
-      <div class="hero__actions">
-        <a href="#programs" class="btn btn--primary">Ver programas</a>
-        <a href="#contact" class="btn btn--outline">Contactar</a>
+    <div class="topbar">
+      <div class="topbar-izquierda">
+        <img src="img/gov.co.png" alt="gov.co" class="logo-govco">
       </div>
-    </div>
-  </section>
-
-  <section id="programs" class="container">
-    <h2 class="section-header">Programas</h2>
-
-    <div class="card course-card" data-category="seguridad">
-      <div class="card__body">
-        <h3 class="card__title">Curso Seguridad Industrial</h3>
-        <p class="card__meta">Duración: 3 meses</p>
+      <div class="topbar-derecha">
+        <span><i class="fas fa-map-marker-alt"></i> San Pedro de Urabá - Antioquia</span>
+        <span><i class="fas fa-phone"></i> 3007513108</span>
+        <span><i class="fas fa-envelope"></i> info@ecosistemas.edu.co</span>
       </div>
     </div>
 
-    <div class="card course-card" data-category="sistemas">
-      <div class="card__body">
-        <h3 class="card__title">Curso Sistemas</h3>
-        <p class="card__meta">Duración: 4 meses</p>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png.png" alt="ECOSISTEMAS">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#">Nosotros <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#historia">Historia</a></li>
+                        <li><a href="#mision">Misión</a></li>
+                        <li><a href="#vision">Visión</a></li>
+                        <li><a href="#valores">Valores</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Programas <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#programas">Sistemas</a></li>
+                        <li><a href="#programas">Auxiliar Administrativo</a></li>
+                        <li><a href="#programas">Auxiliar Contable</a></li>
+                        <li><a href="#programas">Primera Infancia</a></li>
+                        <li><a href="#programas">Seguridad y Salud en el Trabajo</a></li>
+                    </ul>
+                </li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="#programas" class="btn-menu">Conoce Nuestros Programas</a>
+    </header>
+
+    <section class="hero">
+        <div class="slide active"><img src="img/slide1.jpg.jpg"></div>
+        <div class="slide"><img src="img/slide2.jpg.jpg"></div>
+        <div class="slide"><img src="img/slide3.jpg.jpg"></div>
+        <div class="overlay"></div>
+        <div class="contenido">
+            <small>ESCUELA DE COMERCIO, COMPUTACIÓN Y SISTEMAS</small>
+            <h1>ESTUDIA<br>CRECE<br>CERTIFÍCATE<br><span>CON ECOSISTEMAS</span></h1>
+            <p>Formación técnica laboral con enfoque empresarial, administrativo y tecnológico para transformar tu futuro.</p>
+        </div>
+    </section>
+
+    <section class="cinta-carousel">
+      <div class="cinta-track">
+        <span>Más de 9 años de experiencia</span><span>|</span>
+        <span>Becas especiales</span><span>|</span>
+        <span>Financiación sin interés</span><span>|</span>
+        <span>Descuentos para grupos</span><span>|</span>
+        <span>Nuevas fechas de inicio</span><span>|</span>
+        <span>Certificación internacional</span><span>|</span>
+        <span>Programas técnicos laborales</span><span>|</span>
+        <span>Enfoque empresarial y tecnológico</span><span>|</span>
+        <span>Formación con calidad</span>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="about" class="container about-text">
-    <h2>Sobre nosotros</h2>
-    <p>Somos una institución enfocada en la formación técnica con enfoque práctico.</p>
-  </section>
+    <section class="quienes-somos reveal" id="historia">
+        <div class="contenedor">
+            <div class="texto">
+                <span class="etiqueta">QUIÉNES SOMOS</span>
+                <h2>Más de una institución, una oportunidad para crecer</h2>
+                <p>La Escuela de Comercio, Computación y Sistemas ECOSISTEMAS es una institución de formación para el trabajo y el desarrollo humano, comprometida con la educación de calidad.</p>
+                <p>Brindamos programas orientados a fortalecer las competencias laborales, tecnológicas y administrativas de nuestros estudiantes.</p>
+                <a href="#" class="btn-saber">Conoce Más</a>
+            </div>
+            <div class="imagen">
+                <img src="img/slide4.jpg.png">
+            </div>
+        </div>
+    </section>
 
-  <section id="contact" class="container contact-card">
-    <h2>Contacto</h2>
-    <form id="enroll-form">
-      <input class="form__input" type="text" placeholder="Nombre" required>
-      <input class="form__input" type="email" placeholder="Correo" required>
-      <textarea class="form__textarea" placeholder="Mensaje" required></textarea>
-      <button type="button" class="btn btn--primary" id="btn-submit">Enviar</button>
-    </form>
-  </section>
+    <section class="institucional reveal">
+        <div class="cards">
+            <div class="card" id="mision">
+                <i class="fas fa-bullseye"></i>
+                <h3>Misión</h3>
+                <p>Formar personas íntegras mediante programas de educación para el trabajo y el desarrollo humano, aportando al progreso social y empresarial.</p>
+            </div>
+            <div class="card" id="vision">
+                <i class="fas fa-eye"></i>
+                <h3>Visión</h3>
+                <p>Ser reconocidos como una institución líder en formación técnica laboral en la región de Urabá.</p>
+            </div>
+            <div class="card" id="valores">
+                <i class="fas fa-star"></i>
+                <h3>Valores</h3>
+                <ul>
+                    <li>Disciplina</li>
+                    <li>Integridad</li>
+                    <li>Organización</li>
+                    <li>Solidaridad</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
+    <section class="programas reveal" id="programas">
+        <div class="titulo-seccion">
+            <span>OFERTA ACADÉMICA</span>
+            <h2>Programas Técnicos Laborales</h2>
+            <p>Formación enfocada en el empleo y el emprendimiento.</p>
+        </div>
+        <div class="grid-programas">
+            <div class="card-programa reveal">
+              <h3>STCW – BÁSICO</h3>
+              <p><strong>Curso:</strong> Seguridad Personal y Responsabilidades Sociales</p>
+              <p><strong>Modalidad:</strong> Presencial</p>
+              <p><strong>Duración:</strong> 20 horas</p>
+              <p><strong>Inicio:</strong> Jul 14</p>
+              <p><strong>Certificación:</strong> Certificado CPM</p>
+              <p><strong>Precio:</strong> $280.000</p>
+              <a href="#" class="btn-detalles">Ver Detalles</a>
+            </div>
+            <div class="card-programa reveal">
+              <h3>STCW – BÁSICO</h3>
+              <p><strong>Curso:</strong> Lucha Contra Incendios y Control de Averías</p>
+              <p><strong>Modalidad:</strong> Presencial</p>
+              <p><strong>Duración:</strong> 40 horas</p>
+              <p><strong>Inicio:</strong> Jul 14</p>
+              <p><strong>Certificación:</strong> Certificado ONI</p>
+              <p><strong>Precio:</strong> $420.000</p>
+              <a href="#" class="btn-detalles">Ver Detalles</a>
+            </div>
+            <div class="card-programa reveal">
+              <h3>STCW – AVANZADO</h3>
+              <p><strong>Curso:</strong> Operador de Radar, ARPA y Puente Integrado</p>
+              <p><strong>Modalidad:</strong> Presencial</p>
+              <p><strong>Duración:</strong> 68 horas</p>
+              <p><strong>Inicio:</strong> Ago 4</p>
+              <p><strong>Certificación:</strong> Cert. Internacional</p>
+              <p><strong>Precio:</strong> $680.000</p>
+              <a href="#" class="btn-detalles">Ver Detalles</a>
+            </div>
+            <div class="card-programa">
+                <i class="fas fa-child"></i>
+                <h3>Atención Integral a la Primera Infancia</h3>
+                <p>Formación orientada al desarrollo infantil.</p>
+            </div>
+            <div class="card-programa">
+                <i class="fas fa-helmet-safety"></i>
+                <h3>Seguridad y Salud en el Trabajo</h3>
+                <p>Prevención de riesgos laborales.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="q10-section reveal">
+        <div class="q10-contenedor">
+            <div class="q10-texto">
+                <span>PLATAFORMA ACADÉMICA</span>
+                <h2>Accede a tus notas, horarios y procesos académicos</h2>
+                <p>Los estudiantes pueden ingresar al sistema Q10 para consultar información académica, notas, horarios y seguimiento de su formación.</p>
+                <a href="https://site6.q10.com/login?ReturnUrl=%2F" target="_blank" class="btn-q10">Ingresar a Q10</a>
+            </div>
+            <div class="q10-imagen">
+                <img src="img/slide5.jpg" alt="Q10">
+            </div>
+        </div>
+    </section>
+
+    <section class="galeria" id="galeria">
+        <div class="titulo-seccion">
+            <span>GALERÍA</span>
+            <h2>Momentos ECOSISTEMAS</h2>
+            <p>Conoce algunos espacios académicos, actividades y eventos institucionales.</p>
+        </div>
+        <div class="grid-galeria">
+            <img src="img/galeria1.jpg">
+            <img src="img/galeria2.jpg">
+            <img src="img/galeria3.jpg">
+            <img src="img/galeria4.jpg">
+            <img src="img/galeria5.jpg">
+            <img src="img/galeria6.jpg">
+        </div>
+    </section>
+
+    <section class="noticias" id="noticias">
+        <div class="titulo-seccion">
+            <span>ACTUALIDAD</span>
+            <h2>Noticias y Eventos</h2>
+        </div>
+        <div class="grid-noticias">
+            <div class="card-noticia">
+                <img src="img/noticia1.jpg">
+                <div class="contenido-noticia">
+                    <h3>Inscripciones Abiertas 2026</h3>
+                    <p>Ya están abiertas las matrículas para nuestros programas técnicos laborales.</p>
+                </div>
+            </div>
+            <div class="card-noticia">
+                <img src="img/noticia2.jpg">
+                <div class="contenido-noticia">
+                    <h3>Capacitación Empresarial</h3>
+                    <p>Fortalecemos las competencias laborales de nuestros estudiantes.</p>
+                </div>
+            </div>
+            <div class="card-noticia">
+                <img src="img/noticia3.jpg">
+                <div class="contenido-noticia">
+                    <h3>Nuevos Convenios Educativos</h3>
+                    <p>Seguimos ampliando oportunidades de formación para la región.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacto reveal" id="contacto">
+        <div class="contacto-contenedor">
+            <div class="info-contacto">
+                <span>CONTÁCTANOS</span>
+                <h2>Estamos para ayudarte</h2>
+                <p>Comunícate con nosotros para recibir información sobre matrículas, programas académicos y procesos institucionales.</p>
+                <div class="dato">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Calle 52 #47A<br>Frente a Savia Salud<br>San Pedro de Urabá</p>
+                </div>
+                <div class="dato">
+                    <i class="fas fa-phone"></i>
+                    <p>3007513108</p>
+                </div>
+                <div class="dato">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@ecosistemas.edu.co</p>
+                </div>
+                <div class="redes">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="formulario">
+                <form action="https://formsubmit.co/daniel2009jaramillo@gmail.com" method="post">
+                    <input type="text" placeholder="Nombre Completo">
+                    <input type="email" placeholder="Correo Electrónico">
+                    <div class="telefono-group">
+                        <select name="prefijo" required>
+                          <option value="+57">+57 (Colombia)</option>
+                          <option value="+1">+1 (EE.UU.)</option>
+                          <option value="+34">+34 (España)</option>
+                          <option value="+52">+52 (México)</option>
+                          <option value="+55">+55 (Brasil)</option>
+                        </select>
+                        <input type="text" name="telefono" placeholder="Teléfono" required>
+                    </div>
+                    <textarea name="mensaje" rows="6" placeholder="Escribe tu mensaje" required></textarea>
+                    <button type="submit">Enviar Información</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-contenedor">
+            <div>
+                <img src="img/logo.png.png" alt="Logo">
+                <p>Escuela de Comercio, Computación y Sistemas ECOSISTEMAS.</p>
+            </div>
+            <div>
+                <h4>Enlaces</h4>
+                <a href="#">Inicio</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Programas</a>
+                <a href="#">Contacto</a>
+            </div>
+            <div>
+                <h4>Programas</h4>
+                <a href="#">Sistemas</a>
+                <a href="#">Administrativo</a>
+                <a href="#">Contable</a>
+                <a href="#">Primera Infancia</a>
+                <a href="#">SST</a>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2026 ECOSISTEMAS | Todos los derechos reservados
+        </div>
+    </footer>
+
+    <a href="https://wa.me/573203535826" class="btn-whatsapp" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    </a>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
