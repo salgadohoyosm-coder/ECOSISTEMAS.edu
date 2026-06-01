@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecosistemas Pro | Formación Técnica</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <header class="header" id="main-nav">
+    <nav class="header__nav">
+      <div class="header__logo">ECOSISTEMAS</div>
+
+      <ul class="header__menu" id="nav-links">
+        <li><a class="header__link" href="#">Inicio</a></li>
+        <li><a class="header__link" href="#programs">Programas</a></li>
+        <li><a class="header__link" href="#about">Nosotros</a></li>
+        <li><a class="header__link" href="#contact">Contacto</a></li>
+      </ul>
+
+      <button class="header__toggle" id="hamburger" aria-label="Abrir menú">☰</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container hero__content">
+      <h1 class="hero__title">Formación <span>Profesional</span></h1>
+      <p class="hero__text">
+        Capacítate con programas modernos, prácticos y orientados al mercado laboral.
+      </p>
+      <div class="hero__actions">
+        <a href="#programs" class="btn btn--primary">Ver programas</a>
+        <a href="#contact" class="btn btn--outline">Contactar</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="programs" class="container">
+    <h2 class="section-header">Programas</h2>
+
+    <div class="card course-card" data-category="seguridad">
+      <div class="card__body">
+        <h3 class="card__title">Curso Seguridad Industrial</h3>
+        <p class="card__meta">Duración: 3 meses</p>
+      </div>
+    </div>
+
+    <div class="card course-card" data-category="sistemas">
+      <div class="card__body">
+        <h3 class="card__title">Curso Sistemas</h3>
+        <p class="card__meta">Duración: 4 meses</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="container about-text">
+    <h2>Sobre nosotros</h2>
+    <p>Somos una institución enfocada en la formación técnica con enfoque práctico.</p>
+  </section>
+
+  <section id="contact" class="container contact-card">
+    <h2>Contacto</h2>
+    <form id="enroll-form">
+      <input class="form__input" type="text" placeholder="Nombre" required>
+      <input class="form__input" type="email" placeholder="Correo" required>
+      <textarea class="form__textarea" placeholder="Mensaje" required></textarea>
+      <button type="button" class="btn btn--primary" id="btn-submit">Enviar</button>
+    </form>
+  </section>
+
+</body>
+</html>
